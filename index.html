@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f2f2f0" />
+    <title>A note for you</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="postcard-page">
+      <div class="envelope-wrap">
+        <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-label="Open the envelope">
+          <span class="envelope-back" aria-hidden="true"></span>
+          <span class="photo-card" aria-hidden="true">
+            <span class="photo-card-inner">
+              <span class="photo-side photo-front">
+                <img id="photo" src="photo.jpg" alt="" />
+                <span class="photo-placeholder">Add photo.jpg</span>
+              </span>
+              <span class="photo-side photo-back"></span>
+            </span>
+          </span>
+          <span class="envelope-pocket" aria-hidden="true"></span>
+          <span class="envelope-flap" aria-hidden="true"></span>
+          <span class="envelope-label" aria-hidden="true">Open</span>
+        </button>
+        <p class="hint" id="hint">Click to open</p>
+      </div>
+    </main>
+    <audio id="music" src="music-segment.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
